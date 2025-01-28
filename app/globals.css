@@ -32,9 +32,11 @@ input:active {
   @apply border-gray-400 border-b-2;
 }
 
+/*
 body {
   @apply bg-gradient-to-tr from-blue-600 to-purple-500;
 }
+*/
 
 .signin-box button {
   @apply mt-4 bg-purple-600 text-white px-6 py-2 rounded-md;
