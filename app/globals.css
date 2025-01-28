@@ -2,20 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.signin-container {
+  @apply flex justify-center items-center h-screen;
+}
+.signin-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+  @apply p-10 rounded-lg bg-white drop-shadow-md flex flex-col items-start;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.signin-box h1 {
+  @apply mb-5;
+}
+
+input {
+  @apply p-2 rounded-md border-gray-300 border-b-2;
+}
+input:hover {
+  @apply border-gray-600;
+}
+input:active {
+  @apply border-gray-400 border-b-2;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gradient-to-tr from-blue-600 to-purple-500;
+}
+
+.signin-box button {
+  @apply mt-4 bg-purple-600 text-white px-6 py-2 rounded-md;
 }
