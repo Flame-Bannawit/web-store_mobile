@@ -23,7 +23,7 @@
 }
 
 input {
-  @apply p-2 rounded-md border-gray-300 border-b-2;
+  @apply p-2 rounded-md border-gray-300 border-b-2 w-full;
 }
 input:hover {
   @apply border-gray-600;
@@ -32,12 +32,48 @@ input:active {
   @apply border-gray-400 border-b-2;
 }
 
-/*
+
 body {
   @apply bg-gradient-to-tr from-blue-600 to-purple-500;
 }
-*/
+
 
 .signin-box button {
   @apply mt-4 bg-purple-600 text-white px-6 py-2 rounded-md;
+}
+
+.btn {
+  @apply bg-sky-500 text-white px-6 py-2 rounded-md ; 
+}
+
+.container-header {
+  @apply text-2xl text-white font-bold mb-5 bg-sky-500 p-5 rounded-xl shadow-md shadow-gray-400;
+}
+
+.table {
+  @apply w-full;
+}
+
+.table thead {
+  @apply bg-sky-600 text-white;
+}
+
+.table thead th {
+  @apply p-3 text-left;
+}
+
+.table tbody tr {
+  @apply border-b border-gray-400;
+}
+
+.table tbody td {
+  @apply p-3 text-left bg-gray-200;
+}
+
+.btn-edit {
+  @apply bg-blue-500 text-white px-3 py-2 rounded-md mr-2;
+}
+
+.btn-delete {
+  @apply bg-red-500 text-white px-3 py-2 rounded-md;
 }

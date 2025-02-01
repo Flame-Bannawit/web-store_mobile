@@ -56,6 +56,7 @@ export default function SignIn() {
                     onChange={(e) => setPassword(e.target.value)} />
 
                 <button className="mt-4" onClick={handleSignIn}>
+                    <i className="fa fa-sign-in-alt mr-3"></i>
                     Sign In
                 </button>
             </div>
